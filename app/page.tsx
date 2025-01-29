@@ -1,6 +1,5 @@
 import Image from "next/image";
 import ExpenseTracker from "./components/ComponentOne";
-import { Carousel } from "./components/Carousel";
 import { CarouselCustomIndicator } from "./components/ProductCard";
 import ToggleTheme from "./components/ToggleTheme";
 import ClockWidget from "./components/ClockWidget";
@@ -20,9 +19,13 @@ export default function Home() {
         <div className="flex gap-10">
           <CarouselCustomIndicator />
           <ToggleTheme />
-          <ClockWidget />
+          <div className="flex flex-col gap-10">
+            <ClockWidget />
+            <ClockWidget />
+          </div>
+          
         </div>
       </div>
-    </div> // ✅ Closing div tag added here
+    </div> 
   );
 }

@@ -60,7 +60,7 @@ export default class Clock extends Component<{}, ClockState> {
           }}
         />
         <div
-          className="sec_hand absolute w-[1px] h-12 bg-red-500 top-[12%] left-[49%] origin-bottom"
+          className="sec_hand absolute w-0.5 h-12 bg-red-500 top-[12%] left-[49%] origin-bottom"
           style={{
             transform: `rotateZ(${this.state.time.getSeconds() * 6}deg)`,
           }}
